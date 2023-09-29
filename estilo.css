@@ -1,0 +1,130 @@
+html {
+    scroll-behavior: smooth; /* Suaviza o comportamento de rolagem */
+}
+body{ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background-image: url(Imgs/back.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+aside,
+main,
+#Torre,
+#Louvre,
+#Arco,
+#Catedral,
+footer{
+    background-color: #859ce7c5;
+    padding: 10px;
+    border-radius: 10px;
+}
+aside{grid-area: a;}
+main{grid-area: m;}
+#Torre{grid-area: T;}
+#Louvre{grid-area: L;}
+#Arco{grid-area: Ar;}
+#Catedral{grid-area:C ;}
+footer{grid-area: f;}
+.container{
+    display: grid;
+    /* height: 100vh;vh=Viewport Hate= visão da tela */
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+                    "a a a a  "
+                    "m m m m  "
+                    " T T T T"
+                    "L L L L "
+                    "Ar Ar Ar Ar"
+                    "C C C C"
+                    "f f f f ";
+}
+/* aside i */
+aside{
+    padding-top: 15px;
+    padding-bottom: 25px;
+    }
+.AsideTi,.MainTi,.TorreTi,.LouvreTi,.ArcoTi,.CatedralTi{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+.asidet{
+text-align: justify;
+font-size: 20px;
+}
+/* aside f */
+/* main i */
+.maint{
+    font-size: 16px;
+    display: flex;
+    text-align: justify;
+    align-items: start;
+    gap: 20px;
+}
+.maint img{
+    width: 40%;
+    height: auto;
+}
+/* main f */
+/* sections I */
+/* Section torre*/
+.Torret{
+    display: flex; /* Define o layout como flexível */
+    align-items: start; /* Alinha os itens ao topo */
+    gap: 20px; /* Espaço entre os itens do flex */
+}
+.Torret img{
+    width: 40%;
+    height: auto;
+}
+.Torret-text{
+    font-size: 16px;
+    align-items:center ;
+    flex: 1;
+}
+/* Section torre fim */
+/* Section Louvre i */
+.Louvret{
+    font-size: 16px;
+    display: flex;
+    text-align: justify;
+    align-items: start;
+    gap: 20px;
+}
+.Louvret img{
+    width: 40%;
+    height: auto;
+}
+/* Section Louvre f */
+/* Section Arco i */
+.Arcot{
+    display: flex; /* Define o layout como flexível */
+    align-items: start; /* Alinha os itens ao topo */
+    gap: 20px; /* Espaço entre os itens do flex */
+}
+.Arcot img{
+    width: 40%;
+    height: auto;
+}
+.Arco-text{
+    font-size: 16px;
+    align-items:center ;
+    flex: 1;
+}
+/* Section Arco f */
+/* Section Catedral i */
+.Catedralt{
+    font-size: 16px;
+    display: flex;
+    text-align: justify;
+    align-items: start;
+    gap: 20px;
+}
+.Catedralt img{
+    width: 40%;
+    height: auto;
+}
+/* Section Catedral f */
